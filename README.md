@@ -33,7 +33,7 @@ MLOps is a set of practices that combines Machine Learning, DevOps, and Data Eng
 1. **Clone the repository:**
 
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/A-A7med-i/0PS.git
    cd <repo-folder>
    ```
 
