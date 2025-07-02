@@ -1,0 +1,5 @@
+.idea
+MLOPS
+log
+__pycache__
+src.egg-info
