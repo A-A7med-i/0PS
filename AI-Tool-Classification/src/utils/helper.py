@@ -200,10 +200,6 @@ def scale_features(
     return scaled_dataframe
 
 
-from typing import Any
-import joblib
-
-
 def persist_model_to_file(trained_model: Any, output_filepath: str) -> None:
     """
     Persist a trained machine learning model to disk using joblib serialization.
@@ -243,10 +239,6 @@ def persist_model_to_file(trained_model: Any, output_filepath: str) -> None:
             f"Verify path exists, check write permissions, and ensure sufficient disk space. "
             f"Original error: {filesystem_error}"
         ) from filesystem_error
-
-
-from typing import Any
-import joblib
 
 
 def load_model_from_file(input_filepath: str) -> Any:
