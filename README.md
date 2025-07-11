@@ -1,56 +1,80 @@
-# MLOps Repository
+# AI Tool Classification (MLOps Project)
 
-This repository is dedicated to MLOps (Machine Learning Operations) best practices, tools, and workflows. It is structured to support multiple machine learning projects, enabling scalable, reproducible, and maintainable ML pipelines.
+This repository demonstrates MLOps best practices through a modular pipeline for analyzing and classifying AI tool adoption across industries and countries. It features data loading, preprocessing, feature engineering, clustering, and deep learning model training, with experiment tracking and reproducibility.
 
-## Repository Structure
+## Key Features
+
+- **Modular Pipeline:** Data loading, preprocessing, feature engineering, clustering, and model training.
+- **Deep Learning:** Neural network classifier using TensorFlow/Keras.
+- **MLOps Tools:** DVC for data versioning, MLflow for experiment tracking.
+- **Reproducibility:** All steps tracked and reproducible via DVC pipelines.
+- **Extensibility:** Easily add new pipeline stages or ML projects.
+
+## Project Structure
 
 ```
-├── AI-Tool-Classification/   # Example ML project: AI tool adoption analysis
-├── requirements.txt          # Shared Python dependencies
-├── LICENSE
-└── README.md
+.
+├── data/
+│   ├── raw/                # Raw datasets (e.g., ai_adoption_dataset.csv)
+│   └── processed/          # Processed datasets after cleaning/feature engineering
+├── log/
+│   └── logging.log         # Pipeline and application logs
+├── models/                 # Saved models (e.g., model.keras, scaler.joblib)
+├── notebooks/
+│   ├── EDA.ipynb           # Exploratory Data Analysis notebook
+│   ├── experiments.ipynb   # Experiment tracking notebook
+│   └── exploratory.ipynb   # Main exploratory notebook
+├── reports/
+│   └── report_1.txt        # Generated data analysis/model reports
+├── src/
+│   ├── constant/           # Project-wide constants and configuration
+│   ├── data/               # Data loading and validation utilities
+│   ├── feature_engineering/# Feature engineering and transformation scripts
+│   ├── model/              # Deep learning and ML model definitions
+│   ├── pipeline/           # Pipeline orchestration and main scripts
+│   ├── preprocessing/      # Data preprocessing and encoding scripts
+│   ├── utils/              # Helper functions (saving/loading, splitting, scaling)
+│   └── visualization/      # Visualization scripts
+├── .dvcignore              # DVC ignore file
+├── .gitignore              # Git ignore file
+├── LICENSE                 # License file
+├── requirements.txt        # Python dependencies
+├── setup.py                # Python package setup
+└── README.md               # Project documentation
 ```
-
-## What is MLOps?
-
-MLOps is a set of practices that combines Machine Learning, DevOps, and Data Engineering to deploy and maintain ML systems in production reliably and efficiently. This repository demonstrates:
-
-- Project isolation and modularity
-- Version control for code and data
-- Automated data processing and model training
-- Experiment tracking and reproducibility
-- Logging and monitoring
-- Environment management
-
-## Projects
-
-- **AI-Tool-Classification:**
-  Analyze and classify AI tool adoption across industries and countries.
-  See `AI-Tool-Classification/README.md` for details.
 
 ## Getting Started
 
-1. **Clone the repository:**
+1. **Install dependencies:**
 
    ```bash
-   git clone https://github.com/A-A7med-i/0PS.git
-   cd <repo-folder>
-   ```
-
-2. **Set up the environment:**
-
-   ```bash
-   python3 -m venv MLOPS
-   source MLOPS/bin/activate
    pip install -r requirements.txt
    ```
 
-3. **Navigate to a project and follow its README for details.**
+2. **Set up MLflow (for experiment tracking):**
 
-## Contributing
+   ```bash
+   mlflow ui
+   ```
 
-Feel free to open issues or submit pull requests to improve the MLOps workflows or add new projects.
+3. **Run the pipeline:**
+
+   ```bash
+   python src/pipeline/main.py
+   ```
+
+4. **Explore notebooks:**
+   Open any notebook in `notebooks/` (e.g., `exploratory.ipynb`, `EDA.ipynb`, or `experiments.ipynb`) for EDA and prototyping.
+
+## Dataset
+
+- Main dataset: `data/raw/ai_adoption_dataset.csv`
+  Contains information on AI tool adoption rates, industries, countries, user demographics, and more.
 
 ## License
 
-See the LICENSE file for details.
+This project is licensed under the terms of the LICENSE file.
+
+---
+
+*For more details on each module or to contribute, please see the respective directories and code comments.*
