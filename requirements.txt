@@ -1,2 +1,8 @@
 pandas
 jupyter
+scikit-learn
+tensorflow
+numpy
+mlflow
+plotly
+joblib
