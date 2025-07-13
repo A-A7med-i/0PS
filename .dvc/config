@@ -1,0 +1,6 @@
+[core]
+    remote = my-remote
+['remote "my-remote"']
+    url = gdrive://1qAhsA3hvrQuoc5Xs4z40pD84OnjVzXyM
+    gdrive_use_service_account = true
+    gdrive_service_account_json_file_path = /media/ahmed/Data/0ps/ops.json
