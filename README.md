@@ -1,14 +1,25 @@
+
 # AI Tool Classification (MLOps Project)
 
-This repository demonstrates MLOps best practices through a modular pipeline for analyzing and classifying AI tool adoption across industries and countries. It features data loading, preprocessing, feature engineering, clustering, and deep learning model training, with experiment tracking and reproducibility.
+**Description:**
+MLOps project for analyzing, engineering features, and classifying AI tool adoption using reproducible pipelines. The repository demonstrates end-to-end machine learning workflows, including data versioning, experiment tracking, and modular code structure for scalability and collaboration.
+
+This project provides:
+
+- Automated data loading, preprocessing, and feature engineering
+- Deep learning and clustering models for AI tool adoption analysis
+- Reproducible pipelines with DVC and experiment tracking with MLflow
+- Modular, extensible codebase for rapid experimentation and productionization
 
 ## Key Features
 
-- **Modular Pipeline:** Data loading, preprocessing, feature engineering, clustering, and model training.
-- **Deep Learning:** Neural network classifier using TensorFlow/Keras.
-- **MLOps Tools:** DVC for data versioning, MLflow for experiment tracking.
-- **Reproducibility:** All steps tracked and reproducible via DVC pipelines.
-- **Extensibility:** Easily add new pipeline stages or ML projects.
+- **Modular Pipeline:** Data loading, preprocessing, feature engineering, clustering, and model training
+- **Deep Learning:** Neural network classifier using TensorFlow/Keras
+- **Clustering:** Unsupervised learning for customer or tool segmentation
+- **MLOps Tools:** DVC for data versioning, MLflow for experiment tracking
+- **Reproducibility:** All steps tracked and reproducible via DVC pipelines
+- **Extensibility:** Easily add new pipeline stages or ML projects
+- **Visualization:** Notebooks and scripts for EDA and result visualization
 
 ## Project Structure
 
